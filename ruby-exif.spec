@@ -12,6 +12,7 @@ Source0:	http://www.asobitari.nu/program/exif.zip
 URL:		http://www.asobitari.nu/program/exif.html
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb
+BuildRequires:	unzip
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
