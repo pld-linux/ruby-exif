@@ -1,5 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	EXIF module for Ruby
 Summary(pl):	Modu³ EXIF dla Ruby
 Name:		ruby-exif
@@ -10,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://www.asobitari.nu/program/exif.zip
 # Source0-md5:	53b7ad45772bbf4bdb638dfc14682a0c
 URL:		http://www.asobitari.nu/program/exif.html
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb
 BuildRequires:	unzip
@@ -24,11 +23,11 @@ Modu³ EXIF dla Ruby.
 
 %prep
 %setup -c -q
-
-%build
 mkdir lib
 mv *exif*.rb lib/
-cp /usr/share/setup.rb .
+cp %{_datadir}/setup.rb .
+
+%build
 ruby setup.rb config \
 	--rbdir=%{ruby_rubylibdir} \
 	--sodir=%{ruby_archdir}
