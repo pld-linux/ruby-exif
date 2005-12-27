@@ -2,7 +2,7 @@ Summary:	EXIF module for Ruby
 Summary(pl):	Modu³ EXIF dla Ruby
 Name:		ruby-exif
 Version:	0.1
-Release:	1
+Release:	2
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://www.asobitari.nu/program/exif.zip
@@ -12,7 +12,7 @@ BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb
 BuildRequires:	unzip
-Requires:	ruby
+Requires:	ruby-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
