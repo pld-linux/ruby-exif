@@ -8,11 +8,11 @@ Group:		Development/Languages
 Source0:	http://www.asobitari.nu/program/exif.zip
 # Source0-md5:	53b7ad45772bbf4bdb638dfc14682a0c
 URL:		http://www.asobitari.nu/program/exif.html
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb
 BuildRequires:	unzip
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
