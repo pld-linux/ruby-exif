@@ -1,5 +1,5 @@
 Summary:	EXIF module for Ruby
-Summary(pl.UTF-8):   Moduł EXIF dla Ruby
+Summary(pl.UTF-8):	Moduł EXIF dla Ruby
 Name:		ruby-exif
 Version:	0.1
 Release:	2
