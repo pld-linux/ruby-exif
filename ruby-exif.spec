@@ -1,5 +1,5 @@
 Summary:	EXIF module for Ruby
-Summary(pl):	Modu≥ EXIF dla Ruby
+Summary(pl.UTF-8):   Modu≈Ç EXIF dla Ruby
 Name:		ruby-exif
 Version:	0.1
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 EXIF module for Ruby.
 
-%description -l pl
-Modu≥ EXIF dla Ruby.
+%description -l pl.UTF-8
+Modu≈Ç EXIF dla Ruby.
 
 %prep
 %setup -c -q
